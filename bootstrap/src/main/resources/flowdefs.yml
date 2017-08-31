@@ -1,0 +1,6 @@
+  flows:
+    - name: "Flow Definition 1"
+      defs:
+        - "rest:() -> validator: (className = com.sai.foo.Val) ->  service: (className = com.sai.foo.ABC) -> mongoRepository: (action=SAVE, id=1)"
+        - "service: (className = com.sai.foo.ABC) ->  service: (className = com.sai.foo.XYZ) -> mongoRepository: (action=SAVE, id=2)"
+
